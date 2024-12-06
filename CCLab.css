@@ -1,0 +1,88 @@
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.white-section {
+    width: 35%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.white-section img {
+    position: absolute;
+    width: 300px; /* 这里设置图片为 300px 正方形宽度 */
+    height: 300px; /* 这里设置图片为 300px 正方形高度 */
+    z-index: 2;
+}
+
+.image-container {
+    position: absolute;
+    z-index: 2;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.image-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img:active {
+    cursor: grabbing;
+}
+
+.original-size {
+    width: auto;
+    height: auto;
+}
+
+.critical {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 180px;
+    color: #333;
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    z-index: 100;
+}
+
+.computation {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 180px;
+    color: #333;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: 100;
+}
+
+.description {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #333;
+    position: absolute;
+    top: 30px;
+    left: 700px;
+    white-space: pre-line;
+    z-index: 50;
+    line-height: 1.2;
+}

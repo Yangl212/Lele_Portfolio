@@ -1,0 +1,60 @@
+body {
+    background-color: #BBB1E6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.titles {
+    position: relative;
+}
+
+.title {
+    font-family: 'Parkinsans', sans-serif;
+    font-size: clamp(2em, 5vw, 6em); 
+    color: #E2EFE8;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.title:hover {
+    transform: translateY(-10px);
+}
+
+.title a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.title a:hover {
+    color: inherit;
+}
+
+.critical-computation {
+    top: 100px;
+    right: 40px;
+}
+
+.major-studio {
+    top: 300px;
+    left: 40px;
+}
+
+.xfab {
+    top: 450px;
+    right: 40px;
+}
+
+.Creative-Practice-Seminar {
+    top: 600px;
+    left: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        min-width: 1024px;
+    }
+}
+
+
