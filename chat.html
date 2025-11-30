@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Whale Chat Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div class="brand">Blue Whale Chat Group</div>
+            <div class="topbar__actions">
+                <div class="search">
+                    <input type="search" placeholder="Search" aria-label="Search chats">
+                    <button type="button" aria-label="Search">🔍</button>
+                </div>
+                <button class="btn btn--ghost" type="button">Logout</button>
+            </div>
+        </header>
+
+        <main class="layout">
+            <section class="chat">
+                <header class="chat__header">
+                    <div class="pill">General</div>
+                </header>
+                <div class="chat__body">
+                    <div class="messages" aria-live="polite">
+                        <div class="msg msg--system">
+                            <div class="msg__meta">Midnight <span class="msg__time">00:04</span></div>
+                            <div class="msg__text">Welcome our new member.</div>
+                        </div>
+                        <div class="msg">
+                            <div class="msg__meta">Midnight <span class="msg__time">00:05</span></div>
+                            <div class="msg__text">Please remember to change your default password.</div>
+                        </div>
+                        <div class="msg">
+                            <div class="msg__meta">Midnight <span class="msg__time">00:05</span></div>
+                            <div class="msg__text">Your initial password matches the last digits of your ID.</div>
+                        </div>
+                        <div class="msg">
+                            <div class="msg__meta">NewUser_x739 <span class="msg__time">00:07</span></div>
+                            <div class="msg__text">Okay.</div>
+                        </div>
+                        <div class="msg">
+                            <div class="msg__meta">NewUser_x739 <span class="msg__time">00:08</span></div>
+                            <div class="msg__text">When should I start doing the tasks?</div>
+                        </div>
+                        <div class="msg">
+                            <div class="msg__meta">Midnight <span class="msg__time">00:09</span></div>
+                            <div class="msg__text">You can search for "chat group rules" in the search bar.</div>
+                        </div>
+                        <div class="msg">
+                            <div class="msg__meta">Midnight <span class="msg__time">00:13</span></div>
+                            <div class="msg__text">It might feel a bit sudden, but don't worry.</div>
+                        </div>
+                    </div>
+                </div>
+                <form class="chat__input" action="#" method="get">
+                    <input type="text" placeholder="Message — Press Enter to send. Shift+Enter for line break" aria-label="Message input">
+                    <button class="btn btn--primary" type="submit">Send</button>
+                </form>
+            </section>
+
+            <aside class="members" aria-label="Members list">
+                <div class="members__header">Members</div>
+                <div class="member member--online">Midnight</div>
+                <div class="member member--online">B1</div>
+                <div class="member member--online">XiaoYun_13</div>
+                <div class="member member--online">NewUser_x739</div>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
